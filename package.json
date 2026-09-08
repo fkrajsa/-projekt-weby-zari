@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "bootstrap": "^5.3.8",
+    "tinymce": "^8.9.0",
+    "tom-select": "^2.6.2"
+  },
+  "name": "!projekt-weby-zari",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fkrajsa/-projekt-weby-zari.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fkrajsa/-projekt-weby-zari/issues"
+  },
+  "homepage": "https://github.com/fkrajsa/-projekt-weby-zari#readme"
+}
