@@ -4,39 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Půjčovna & Servis Kol</title>
-  <link rel="stylesheet" href="node_modules/bootswatch/dist/solar/bootstrap.min.css">
+  <meta name="author" content="Filip Krajsa">
+  <meta name="description" content="Půjčovna a servis kol - nabídka, ceník, rezervace a kontaktní formulář.">
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/superhero/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
-<body class="bg-dark text-light" style="min-height:100vh; background-color:#000;">
+<body>
 
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-bicycle me-2 text-white"></i>BikeHub</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top border-bottom border-secondary text-white" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="index.html"><i class="fa-solid fa-bicycle me-2 text-white"></i>Půjčovna & Servis Kol</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarColor01">
+      <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav ms-auto">
-           <li class="nav-item">
-            <a class="nav-link active" href="#">Domů
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Domů</a></li>
           <li class="nav-item"><a class="nav-link" href="#carousel">Galerie</a></li>
           <li class="nav-item"><a class="nav-link" href="#nabidka">Nabídka</a></li>
           <li class="nav-item"><a class="nav-link" href="#cenik">Ceník</a></li>
           <li class="nav-item"><a class="nav-link" href="#rezervace">Rezervace</a></li>
           <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
-          <li class="nav-item"><a class="nav-link" href="#o-projektu">O projektu</a></li>
+          <li class="nav-item"><a class="nav-link" href="o-projektu.html">O projektu</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="container my-2" id="carousel">
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <section class="container my-4" id="carousel">
+    <div id="demo" class="carousel slide rounded overflow-hidden rounded" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -47,38 +46,38 @@
       
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?w=1200&h=450&fit=crop" alt="silnicka" class="d-block w-100" style="height: 500px; object-fit: cover;">
-          <div class="carousel-caption">
-            <h5>Silniční kola</h5>
+          <img src="img/silnicni.jpg" alt="silnicka" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block rounded p-2">
+            <h5 class="m-0 text-white">Silniční kola</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/horske.jpg" alt="horske" class="d-block w-100" style="height: 500px; object-fit: cover;">
-          <div class="carousel-caption">
-            <h5>Horská kola</h5>
+          <img src="img/horske.jpg" alt="horske" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block rounded p-2">
+            <h5 class="m-0 text-white">Horská kola</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/gravel.jpg" alt="gravel" class="d-block w-100" style="height: 500px; object-fit: cover;">
-          <div class="carousel-caption">
-            <h5>Gravel kola</h5>
+          <img src="img/gravel.jpg" alt="gravel" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block rounded p-2">
+            <h5 class="m-0 text-white">Gravel kola</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/elektro.jpg" alt="elektro" class="d-block w-100" style="height: 500px; object-fit: cover;">
-          <div class="carousel-caption">
-            <h5>Elektro kola</h5>
+          <img src="img/elektro.jpg" alt="elektro" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block rounded p-2">
+            <h5 class="m-0 text-white">Elektrokola</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/servis.jpg" alt="servis" class="d-block w-100" style="height: 500px; object-fit: cover;">
-          <div class="carousel-caption">
-            <h5>Servis a údržba</h5>
+          <img src="img/servis.jpg" alt="servis" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block rounded p-2">
+            <h5 class="m-0 text-white">Servis a údržba</h5>
           </div>
         </div>
       </div>
       
-      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide-prev>
         <span class="carousel-control-prev-icon"></span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
@@ -87,123 +86,198 @@
     </div>
   </section>
 
-  <section class="container my-4" id="nabidka">
-    <h3 class="mb-3">Naše nabídka</h3>
-    <div class="d-flex flex-row flex-nowrap justify-content-between gap-3 overflow-auto pb-2">
-      <div class="card bg-primary text-white" style="flex: 0 0 19%; min-width: 200px;">
-        <img src="img/silnicni.jpg" class="card-img-top" alt="silnicka">
-        <div class="card-body">
-          <h5 class="card-title">Silniční kola</h5>
-          <p class="card-text">Rychlá a kvalitní silniční kola.</p>
+  <section class="container my-5 " id="nabidka">
+  <h3 class="fw-bold mb-3 text-white  border-bottom border-secondary pb-2">
+      <i class="fa-solid fa-images me-2 text-primary "></i>Naše nabídka
+    </h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
+      
+      <div class="col">
+        <div class="card h-100 border-secondary">
+          <img src="img/silnicni2.jpg" class="card-img-top" alt="silnicka">
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-6 text-white">Silniční kola</h5>
+            <p class="card-text text-muted small">Rychlá a lehká silniční kola na asfalt.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card bg-dark text-white" style="flex: 0 0 19%; min-width: 200px;">
-        <img src="img/horske.jpg" class="card-img-top" alt="horske">
-        <div class="card-body">
-          <h5 class="card-title">Horská kola</h5>
-          <p class="card-text">Robustní kola pro náročné terény.</p>
+      <div class="col">
+        <div class="card h-100 border-secondary">
+          <img src="img/horske2.jpg" class="card-img-top" alt="horske">
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-6 text-white">Horská kola</h5>
+            <p class="card-text text-muted small">Robustní kola pro náročný lesní terén.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card bg-primary text-white" style="flex: 0 0 19%; min-width: 200px;">
-        <img src="img/gravel.jpg" class="card-img-top" alt="gravel">
-        <div class="card-body">
-          <h5 class="card-title">Gravel kola</h5>
-          <p class="card-text">Univerzální kola pro silnice i traily.</p>
+      <div class="col">
+        <div class="card h-100 border-secondary">
+          <img src="img/gravel2.jpg" class="card-img-top" alt="gravel">
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-6 text-white">Gravel kola</h5>
+            <p class="card-text text-muted small">Univerzální kola na cesty i do terénu.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card bg-dark text-white" style="flex: 0 0 19%; min-width: 200px;">
-        <img src="img/elektro.jpg" class="card-img-top" alt="elektro">
-        <div class="card-body">
-          <h5 class="card-title">Elektrokola</h5>
-          <p class="card-text">Pohodlné jízdy s asistencí motoru.</p>
+      <div class="col">
+        <div class="card h-100 border-secondary">
+          <img src="img/elektro2.jpg" class="card-img-top" alt="elektro">
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-6 text-white">Elektrokola</h5>
+            <p class="card-text text-muted small">Pohodlné vyjížďky s asistencí motoru.</p>
+          </div>
         </div>
       </div>
 
-      <div class="card bg-primary text-white" style="flex: 0 0 19%; min-width: 200px;">
-        <img src="img/servis.jpg" class="card-img-top" alt="servis">
-        <div class="card-body">
-          <h5 class="card-title">Servis a údržba</h5>
-          <p class="card-text">Kompletní servis pro vaše kolo.</p>
+      <div class="col">
+        <div class="card h-100 border-secondary">
+          <img src="img/servis2.jpg" class="card-img-top" alt="servis">
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-6 text-white">Servis a údržba</h5>
+            <p class="card-text text-muted small">Kompletní servis.</p>
+          </div>
         </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cenik" class="container my-5">
+    <h3 class="fw-bold mb-3 text-white  border-bottom border-secondary pb-2">
+      <i class="fa-solid fa-table me-2 text-primary "></i>Přehled půjčovného
+    </h3>
+    <div class="card border-secondary overflow-hidden">
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0 text-white">
+          <thead class="border-bottom border-secondary">
+            <tr class="text-secondary small text-uppercase">
+              <th class="py-3 ps-4">Kategorie</th>
+              <th class="py-3">1 den</th>
+              <th class="py-3">Víkend</th>
+              <th class="py-3 pe-4">Záloha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-bottom border-secondary">
+              <td class="fw-semibold ps-4">Horská kola</td>
+              <td>890 Kč</td>
+              <td>1 590 Kč</td>
+              <td class="pe-4">5 000 Kč</td>
+            </tr>
+            <tr class="border-bottom border-secondary">
+              <td class="fw-semibold ps-4">Elektrokola</td>
+              <td>1 190 Kč</td>
+              <td>2 190 Kč</td>
+              <td class="pe-4">10 000 Kč</td>
+            </tr>
+            <tr class="border-bottom border-secondary">
+              <td class="fw-semibold ps-4">Gravel kola</td>
+              <td>650 Kč</td>
+              <td>1 190 Kč</td>
+              <td class="pe-4">4 000 Kč</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold ps-4">Dětská kola</td>
+              <td>350 Kč</td>
+              <td>590 Kč</td>
+              <td class="pe-4">2 000 Kč</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <section class="container my-5" id="rezervace">
-    <h3 class="mb-3">Rezervace výbavy</h3>
-    <form>
-      <div class="row g-3">
-        <div class="col-12">
-          <label for="doplnkySelect" class="form-label">Doplňková výbava k výpůjčce (povinný výběr)</label>
+  <section class="container my-5 text-white" id="rezervace">
+    <div class="card border-secondary p-4">
+      <h3 class="fw-bold mb-3 text-white  border-bottom border-secondary pb-2">
+        <i class="fa-solid fa-list-check me-2 text-primary"></i>Rezervace výbavy
+      </h3>
+      <form action="#" method="POST">
+        <div class="mb-3">
+          <label for="doplnkySelect" class="form-label text-white fw-semibold">Doplňková výbava k výpůjčce</label>
           <select id="doplnkySelect" name="doplnky[]" multiple required>
+            <option value="" disabled selected>Vyberte výbavu...</option>
             <option value="helma">Cyklistická přilba</option>
-            <option value="spd">Nášlapné pedály</option>
-            <option value="brasna">Brašna s pumpičkou a nářadím</option>
+            <option value="spd">Lepší pedály</option>
+            <option value="brasna">Brašna s nářadím</option>
             <option value="sedacka">Dětská sedačka</option>
             <option value="zamek">Bezpečnostní zámek</option>
             <option value="sada">Sada na opravu kola</option>
           </select>
         </div>
-      </div>
-      <button type="submit" class="btn btn-primary mt-3">
-        <i class="fa-solid fa-paper-plane me-1"></i>Odeslat
-      </button>
-    </form>
-  </section>
-   <section id="cenik" class="container my-5">
-    <h3 class="h4 mb-3"><i class="fa-solid fa-table me-2 text-secondary"></i>Přehled půjčovného</h3>
-    <div class="table-responsive shadow-sm rounded">
-      <table class="table table-striped table-hover table-bordered align-middle mb-0 bg-white">
-        <thead class="table-primary text-white">
-          <tr>
-            <th>Kategorie</th>
-            <th>1 den (pracovní dny)</th>
-            <th>Víkend (Pá-Ne)</th>
-            <th>Záloha</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="fw-bold">Horská kola</td>
-            <td>890 Kč</td>
-            <td>1 590 Kč</td>
-            <td>5 000 Kč</td>
-          </tr>
-          <tr>
-            <td class="fw-bold">Elektrokola</td>
-            <td>1 190 Kč</td>
-            <td>2 190 Kč</td>
-            <td>10 000 Kč</td>
-          </tr>
-          <tr>
-            <td class="fw-bold">Gravel kola</td>
-            <td>650 Kč</td>
-            <td>1 190 Kč</td>
-            <td>4 000 Kč</td>
-          </tr>
-          <tr>
-            <td class="fw-bold">Dětská kola</td>
-            <td>350 Kč</td>
-            <td>590 Kč</td>
-            <td>2 000 Kč</td>
-          </tr>
-        </tbody>
-      </table>
+        <button type="submit" class="btn btn-primary px-4">
+          <i class="fa-solid fa-paper-plane me-2"></i>Odeslat rezervaci
+        </button>
+      </form>
     </div>
   </section>
 
+  <section class="container my-5" id="kontakt">
+    <div class="card border-secondary p-4">
+      <h3 class="fw-bold mb-3 text-white  border-bottom border-secondary pb-2">
+        <i class="fa-solid fa-envelope me-2 text-primary"></i>Kontaktní formulář
+      </h3>
+      <form action="#" method="POST">
+         <div class="mb-3">
+          <label for="jmeno" class="form-label text-white fw-semibold">Vaše jméno a příjmení</label>
+          <input type="text" class="form-control" id="jmeno" placeholder="Jan Novák" required>
+        </div>
+        <div class="mb-3">
+          <label for="kontaktEmail" class="form-label text-white fw-semibold">Váš e-mail</label>
+          <input type="email" class="form-control" id="kontaktEmail" placeholder="jmeno@domena.cz" required>
+        </div>
+        <div class="mb-4">
+          <label for="kontaktZprava" class="form-label text-white fw-semibold">Zpráva</label>
+          <textarea id="kontaktZprava" name="zprava" rows="7"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary px-4">
+          <i class="fa-solid fa-paper-plane me-2"></i>Odeslat
+        </button>
+      </form>
+    </div>
+  </section>
+  <footer class="border-top border-secondary py-4 mt-5 bg-dark">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold text-white">Půjčovna a servis kol</p>
+      <p class="text-muted small mb-3">Projekt WEB 2.B Filip Krajsa</p>
+      <a href="o-projektu.html"><p class="text-muted small mb-2">Více o projektu</p></a>
+      </a>
+      <div>
+        <a href="dokumentace.pdf" target="_blank" class="btn btn-outline-light btn-sm me-2">
+          <i class="fa-solid fa-file-pdf me-1 text-danger"></i>Dokumentace (PDF)
+        </a>
+        <a href="https://github.com/fkrajsa/-projekt-weby-zari" target="_blank" class="btn btn-outline-light btn-sm text-light">
+          <i class="fa-brands fa-github me-1"></i>GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
+  <script src="node_modules/tinymce/tinymce.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       new TomSelect('#doplnkySelect', {
         plugins: ['remove_button'],
         placeholder: 'Vyberte doplňkovou výbavu...',
         maxItems: null,
-        allowEmptyOption: true
+        allowEmptyOption: false
+      });
+
+      tinymce.init({
+        selector: '#kontaktZprava',
+        license_key: 'gpl',
+        height: 240,
+        menubar: true,
+        skin: 'oxide-dark',
+        content_css: 'light',
+        plugins: 'lists link code',
+        toolbar: 'undo redo | bold italic underline | bullist numlist | link | removeformat'
       });
     });
   </script>
